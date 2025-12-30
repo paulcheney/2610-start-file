@@ -411,4 +411,18 @@ footer p {
     margin: 0 auto;
     max-width: 87.5rem;
   }
+  /************************** HAMBURGER **************************/
+  .hamburger-button {
+    display: none;
+  }
+  /************************** NAVIGATION **************************/
+  nav {
+    display: block;
+  }
+  nav ul {
+    display: flex;
+  }
+  nav a {
+    border: none;
+  }
 }
