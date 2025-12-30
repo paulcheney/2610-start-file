@@ -1,0 +1,104 @@
+/************************** IMPORT VARIABLES **************************/
+@use "variables" as v;
+
+/************************** BORDER BOX **************************/
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/************************** BODY **************************/
+body {
+  font-family: v.$font-family;
+  font-weight: v.$font-weight-normal;
+  margin: 0;
+  padding: 0;
+}
+
+/************************** HEADER **************************/
+header {
+  padding: 10px 0 10px 10px;
+  display: grid;
+  grid-template-columns: 39px auto 44px;
+  column-gap: 8px;
+  align-items: end;
+  border-bottom: 1px solid var(--color-mygrey-10);
+
+  span {
+    font-size: 2rem;
+    font-weight: v.$font-weight-normal;
+    color: v.$color-primary;
+  }
+}
+
+/************************** HAMBURGER **************************/
+.hamburger-button {
+  background: none;
+  border: none;
+  color: var(--color-mygrey-80);
+  cursor: pointer;
+  font-family: Verdana;
+  font-size: 2rem;
+}
+
+.hamburger-button::before {
+  content: "\2630";
+}
+
+.hamburger-button.show::before {
+  content: "\00D7";
+}
+
+/************************** NAVIGATION **************************/
+nav {
+  display: none;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  a {
+    display: block;
+    font-size: 0.7rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: v.$color-grey-60;
+    text-decoration: none;
+    padding: 0.6rem 10px;
+    border-bottom: 1px solid v.$color-grey-5;
+
+    &:hover {
+      background-color: v.$color-grey-5;
+    }
+  }
+}
+
+nav li.active a {
+  text-decoration: underline;
+  color: v.$color-primary
+}
+
+nav.show {
+  display: block;
+}
+
+
+
+
+
+
+/************************** FOOTER **************************/
+footer {
+  text-align: center;
+  padding: 1rem 0;
+
+  p {
+    margin: 0.25rem;
+    font-size: 0.9rem;
+    font-weight: v.$font-weight-normal;
+    color: v.$color-primary;
+  }
+}

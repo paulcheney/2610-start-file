@@ -1,0 +1,25 @@
+$color-primary: #8F5d14;
+$color-secondary: #fbd63a;
+
+// Add a grey scale colors
+$color-grey-0: lab(100% 0 0);
+$color-grey-5: lab(95% 0 0);
+$color-grey-10: lab(90% 0 0);
+$color-grey-20: lab(80% 0 0);
+$color-grey-30: lab(70% 0 0);
+$color-grey-40: lab(60% 0 0);
+$color-grey-50: lab(50% 0 0);
+$color-grey-60: lab(40% 0 0);
+$color-grey-70: lab(30% 0 0);
+$color-grey-80: lab(20% 0 0);
+$color-grey-90: lab(10% 0 0);
+$color-grey-100: lab(0% 0 0);
+
+// Font family stuff
+$font-family: "Josefin Sans", sans-serif;
+$font-weight-thin: 100;
+$font-weight-normal: 300;
+$font-weight-heavy: 500;
+
+// Breakpoint Stuff
+$break-point: 30rem;
