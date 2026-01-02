@@ -333,12 +333,103 @@ header {
   grid-template-columns: 39px auto 44px;
   column-gap: 8px;
   align-items: end;
-  border-bottom: 1px solid var(--color-mygrey-10);
+  border-bottom: 1px solid lab(90% 0 0);
 }
 header span {
   font-size: 2rem;
   font-weight: 300;
   color: #8F5d14;
+}
+
+/************************** MAIN **************************/
+main > h1,
+main > h2,
+main > h3,
+main > p {
+  padding: 0;
+  font-weight: 300;
+}
+
+main h1 {
+  font-size: 2rem;
+  color: #8F5d14;
+  margin: 1rem 10px 0 10px;
+}
+main h2 {
+  font-size: 1.6rem;
+  color: lab(20% 0 0);
+  margin: 0.75rem 10px 0 10px;
+}
+main h3 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: lab(50% 0 0);
+  margin: 0.5rem 10px 0 10px;
+}
+main p {
+  font-size: 1rem;
+  color: lab(20% 0 0);
+  margin: 0.1rem 10px;
+  line-height: 150%;
+}
+
+/************************** FOOTER **************************/
+footer .top {
+  background-color: lab(10% 0 0);
+  color: lab(90% 0 0);
+  padding: 0 10px 1rem 10px;
+}
+footer .top h3 {
+  margin: 0;
+  padding: 0;
+  display: block;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding-top: 1.5rem;
+  padding-bottom: 0.1rem;
+}
+footer .top .social {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+footer .top .social a {
+  display: block;
+  width: 44px;
+  height: 44px;
+  background-color: lab(60% 0 0);
+  border: 2px solid lab(90% 0 0);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .top .social a:hover {
+  background-color: #fbd63a;
+}
+footer .top p, footer .top address, footer .top a {
+  margin: 0;
+  padding: 0;
+  color: lab(90% 0 0);
+  font-style: normal;
+  line-height: 125%;
+}
+footer .top a:hover {
+  color: #fbd63a;
+}
+
+footer .bot {
+  padding: 1rem 10px;
+  background-color: lab(80% 0 0);
+  color: lab(20% 0 0);
+  text-align: center;
+}
+footer .bot a {
+  color: lab(20% 0 0);
 }
 
 /************************** HAMBURGER **************************/
@@ -391,18 +482,6 @@ nav.show {
   display: block;
 }
 
-/************************** FOOTER **************************/
-footer {
-  text-align: center;
-  padding: 1rem 0;
-}
-footer p {
-  margin: 0.25rem;
-  font-size: 0.9rem;
-  font-weight: 300;
-  color: #8F5d14;
-}
-
 @media only screen and (min-width: 30rem) {
   header,
   nav,
@@ -411,6 +490,13 @@ footer p {
     margin: 0 auto;
     max-width: 87.5rem;
   }
+  /************************** FOOTER **************************/
+  footer .top {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media only screen and (min-width: 30rem) {
   /************************** HAMBURGER **************************/
   .hamburger-button {
     display: none;
@@ -418,6 +504,10 @@ footer p {
   /************************** NAVIGATION **************************/
   nav {
     display: block;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-bottom: 1px solid lab(70% 0 0);
+    position: sticky;
+    top: 0;
   }
   nav ul {
     display: flex;

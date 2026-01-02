@@ -1,0 +1,29 @@
+// IMPORT VARIABLES
+@use "variables" as *;
+
+// MEDIA QUERY STARTS HERE
+@media only screen and (min-width: $break-point) {
+
+  /************************** HAMBURGER **************************/
+  .hamburger-button {
+    display: none;
+  }
+
+  /************************** NAVIGATION **************************/
+  nav {
+    display: block;
+    background-color: rgba(255,255,255,0.9);
+    border-bottom: 1px solid $color-grey-30;
+    position: sticky;
+    top: 0;
+
+    ul {
+      display: flex;
+    }
+
+    a {
+      border: none;
+    }
+  }
+
+}

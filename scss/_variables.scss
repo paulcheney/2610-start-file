@@ -23,3 +23,10 @@ $font-weight-heavy: 500;
 
 // Breakpoint Stuff
 $break-point: 30rem;
+
+// Layout Stuff
+$gutter: 10px;
+@mixin reset {
+    margin: 0;
+    padding: 0;
+}

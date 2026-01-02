@@ -1,7 +1,8 @@
 // IMPORT VARIABLES
-@use "variables" as v;
+@use "variables" as *;
 
-@media only screen and (min-width: v.$break-point) {
+// MEDIA QUERY STARTS HERE
+@media only screen and (min-width: $break-point) {
 
   header,
   nav,
@@ -11,20 +12,13 @@
     max-width: 87.5rem;
   }
 
-/************************** HAMBURGER **************************/
-.hamburger-button {
-  display: none;
-}
 
-/************************** NAVIGATION **************************/
-nav {
-  display: block;
-  ul {
-    display: flex;
-  }
-  a {
-    border: none;
+
+  /************************** FOOTER **************************/
+  footer .top {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
-} // end media query
+// end media query
