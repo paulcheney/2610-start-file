@@ -1,4 +1,4 @@
-// IMPORT VARIABLES
+/************************** IMPORT VARIABLES **************************/
 @use "variables" as *;
 
 // MEDIA QUERY STARTS HERE
@@ -12,10 +12,6 @@
   /************************** NAVIGATION **************************/
   nav {
     display: block;
-    background-color: rgba(255,255,255,0.9);
-    border-bottom: 1px solid $color-grey-30;
-    position: sticky;
-    top: 0;
 
     ul {
       display: flex;

@@ -334,6 +334,7 @@ header {
   column-gap: 8px;
   align-items: end;
   border-bottom: 1px solid lab(90% 0 0);
+  box-shadow: 0 0 10px lab(95% 0 0);
 }
 header span {
   font-size: 2rem;
@@ -342,31 +343,35 @@ header span {
 }
 
 /************************** MAIN **************************/
-main > h1,
-main > h2,
-main > h3,
-main > p {
+main > h1 {
   padding: 0;
+  margin: 0;
   font-weight: 300;
-}
-
-main h1 {
   font-size: 2rem;
   color: #8F5d14;
   margin: 1rem 10px 0 10px;
 }
-main h2 {
+main > h2 {
+  padding: 0;
+  margin: 0;
+  font-weight: 300;
   font-size: 1.6rem;
   color: lab(20% 0 0);
   margin: 0.75rem 10px 0 10px;
 }
-main h3 {
+main > h3 {
+  padding: 0;
+  margin: 0;
+  font-weight: 300;
   font-size: 1.3rem;
   font-weight: 500;
   color: lab(50% 0 0);
   margin: 0.5rem 10px 0 10px;
 }
-main p {
+main > p {
+  padding: 0;
+  margin: 0;
+  font-weight: 300;
   font-size: 1rem;
   color: lab(20% 0 0);
   margin: 0.1rem 10px;
@@ -411,7 +416,9 @@ footer .top .social a {
 footer .top .social a:hover {
   background-color: #fbd63a;
 }
-footer .top p, footer .top address, footer .top a {
+footer .top p,
+footer .top address,
+footer .top a {
   margin: 0;
   padding: 0;
   color: lab(90% 0 0);
@@ -432,6 +439,7 @@ footer .bot a {
   color: lab(20% 0 0);
 }
 
+/************************** IMPORT VARIABLES **************************/
 /************************** HAMBURGER **************************/
 .hamburger-button {
   background: none;
@@ -482,6 +490,7 @@ nav.show {
   display: block;
 }
 
+/************************** IMPORT VARIABLES **************************/
 @media only screen and (min-width: 30rem) {
   header,
   nav,
@@ -494,8 +503,10 @@ nav.show {
   footer .top {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
   }
 }
+/************************** IMPORT VARIABLES **************************/
 @media only screen and (min-width: 30rem) {
   /************************** HAMBURGER **************************/
   .hamburger-button {
@@ -504,10 +515,6 @@ nav.show {
   /************************** NAVIGATION **************************/
   nav {
     display: block;
-    background-color: rgba(255, 255, 255, 0.9);
-    border-bottom: 1px solid lab(70% 0 0);
-    position: sticky;
-    top: 0;
   }
   nav ul {
     display: flex;

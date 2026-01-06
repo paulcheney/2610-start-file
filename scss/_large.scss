@@ -1,4 +1,4 @@
-// IMPORT VARIABLES
+/************************** IMPORT VARIABLES **************************/
 @use "variables" as *;
 
 // MEDIA QUERY STARTS HERE
@@ -12,12 +12,11 @@
     max-width: 87.5rem;
   }
 
-
-
   /************************** FOOTER **************************/
   footer .top {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
   }
 }
 
