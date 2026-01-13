@@ -1,10 +1,9 @@
 // Store the selected elements that we are going to use. 
-const hambutton = document.querySelector('#hamburger');
-const mainnav = document.querySelector('#navbar')
+const hamburger = document.querySelector(".hamburger-button");
+const navigation = document.querySelector(".site-nav");
 
-
-//Toggle the show class off and on
-hambutton.addEventListener('click', () => {
-	mainnav.classList.toggle('show');
-	hambutton.classList.toggle('show');
+// Open / close main menu
+hamburger.addEventListener("click", () => {
+  navigation.classList.toggle("open");
+  hamburger.classList.toggle("open");
 });

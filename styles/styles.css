@@ -459,15 +459,14 @@ footer .bot a {
 }
 
 /************************** NAVIGATION **************************/
-nav {
-  display: none;
-}
-nav ul {
+.site-nav {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: none;
 }
-nav a {
+
+.site-nav a {
   display: block;
   font-size: 0.7rem;
   font-weight: 500;
@@ -477,16 +476,16 @@ nav a {
   padding: 0.6rem 10px;
   border-bottom: 1px solid lab(95% 0 0);
 }
-nav a:hover {
+.site-nav a:hover {
   background-color: lab(95% 0 0);
 }
 
-nav li.active a {
+.site-nav li.active a {
   text-decoration: underline;
   color: #8F5d14;
 }
 
-nav.show {
+.site-nav.open {
   display: block;
 }
 
